@@ -1,1 +1,4 @@
-
+<div class="jumbotro text-center">  <!-- text-center centralizando o texto no navegador -->
+    <h1>LIVROS ONLINE </h1>
+ <p>Vários livros diponíveis para você ler  onde  e quando quiser.</p>
+</div>
