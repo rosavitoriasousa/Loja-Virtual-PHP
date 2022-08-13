@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienal do Livro</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <!-- NÃO SE ESQUEÇA DO Ctrl+S ROSA!! -->
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery livraria -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- JavaScript compilado-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+    .navbar{margin-bottom: 0; } 
+    </style>
+
+</head>
+<body>
+
+<?php include 'NAVE.php' ?> <!-- copiar e colar versão php -->
+<?php include 'CABECALHO.html' ?>
+
+<div class="container-fluid">
+
+<div class="row"> <!-- criando uma linha-->
+     <div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
+     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <div><h1>Nome do Livro<h1></div>
+     <div><h4>R$20,00<h4></div>
+        </div>
+
+        <div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
+     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <div><h1>Nome do Livro<h1></div>
+     <div><h4>R$20,00<h4></div>
+
+        </div><div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
+     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <div><h1>Nome do Livro<h1></div>
+     <div><h4>R$20,00<h4></div>
+
+        </div><div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
+     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <div><h1>Nome do Livro<h1></div>
+     <div><h4>R$20,00<h4></div>
+
+     
+     </div><div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
+     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <div><h1>Nome do Livro<h1></div>
+     <div><h4>R$20,00<h4></div>
+
+        </div>
+    </div>
+</div>
+
+<?php  include 'RODAPE.html'; ?>
+
+</body>
+</html>
