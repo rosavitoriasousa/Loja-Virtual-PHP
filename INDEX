@@ -31,29 +31,29 @@
 
 <div class="row"> <!-- criando uma linha-->
      <div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
-     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <img src="https://placehold.co/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
      <div><h1>Nome do Livro<h1></div>
      <div><h4>R$20,00<h4></div>
         </div>
 
         <div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
-     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <img src="https://placehold.co/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
      <div><h1>Nome do Livro<h1></div>
      <div><h4>R$20,00<h4></div>
 
         </div><div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
-     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <img src="https://placehold.co/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
      <div><h1>Nome do Livro<h1></div>
      <div><h4>R$20,00<h4></div>
 
         </div><div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
-     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <img src="https://placehold.co/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
      <div><h1>Nome do Livro<h1></div>
      <div><h4>R$20,00<h4></div>
 
      
      </div><div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
-     <img src="https://placehold.it/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
+     <img src="https://placehold.co/450x320" class="img-responsive" style="width:100%"> <!-- criando uma imagem temporaria-->
      <div><h1>Nome do Livro<h1></div>
      <div><h4>R$20,00<h4></div>
 
