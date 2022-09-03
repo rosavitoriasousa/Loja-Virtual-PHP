@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienal do Livro</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- NÃO SE ESQUEÇA DO Ctrl+S ROSA!! -->
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery livraria -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- JavaScript compilado-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+    .navbar{margin-bottom: 0; } 
+    </style>
+
+</head>
+<body>
+
+<?php include 'NAVE.php' ?> <!-- copiar e colar versão php -->
+<?php include 'CABECALHO.html' ?>
+<?php include 'CONEXAO.PHP';?>
+ <!-- AULA 18 -->
+    $consulta = $cn->query('select nm_livro,vl_preco,ds_capa,qt_estoque from vw_LIVRO');
+
+
+<div class="container-fluid">
+
+<div class="row"> <!-- criando uma linha-->
+    <?php    while ($exibe = $consulta->fetch(PDO:: FETCH_ASSOC){ ?>
+     <div class="col-sm-3"> <!-- criando 3 linhas de 4 colunas -->
+     <img src="IMAGENS/<<?php  echo $exibe['DS_CAPA']; ?>.jpg" class="img-responsive" style="width:100%"> 
+     <div><h4><?php echo mb_strimwidth ($exibe['NM_LIVRO'],0,30,'...'); ?><br><h4></div>
+     <div><h5>R$<?php echo  number_format ($exibe ['VL-PRECO'],2,',','.'); ?><h5></div>
+     <div class="text-center">
+        <button class="btn btn-Ig btn-block btn-info">
+            <span class="glyphicon glyphicon-info-sign"> Detalhes</span> 
+        </button>
+    </div>
+    <div class="text-center" style="margin-top:5px; margin-bottom:5px;">
+        <button class="btn btn-Ig btn-block btn-danger">
+            <span class="glyphicon glyphicon-usd">Comprar</span> 
+        </button>
+    </div>
+
+
+
+
+        </div>
+        <?php} ?>
+        
+        <div class="text-center">
+            <button class="btn btn-Ig btn-block btn-default">
+                <span class="glyphicon glyphicon-info-sing" style="color:cadetblue">Detalhes</span>
+    </button>
+    </div>
+
+    <div class="text-center" style="margin-top:5px; margin-bottom;5px">
+    <?php if ($exibe['qt_estoque'] > 0) { ?>
+    <button class="btn btn-Ig btn-block btn-info">
+    <span class="glyphicon glyphicon-usd">Comprar</span>
+    </button>
+
+    <?php } else {?>
+        <button class="btn btn-Ig btn-block btn-danger"disabled>
+    <span class="glyphicon glyphicon-remove-circle">Indisponível</span> //CRTL +S + F5//
+    </button>   
+
+    <?php } ?>
+
+
+    </div>
+
+    </div><!-- class row -->
+</div><!-- container -->
+
+<?php  include 'RODAPE.html'; ?>
+
+</body>
+</html>
